@@ -1,0 +1,61 @@
+def addition ():
+    print("Addition")
+
+    a = float(input("Please enter number: "))
+    b = float(input("Please enter second number: "))
+
+    return a+b
+
+def substraction ():
+    print("Subtraction")
+
+    a = float(input("Please enter number: "))
+    b = float(input("Please enter second number: "))
+
+    return a-b
+
+def multiplication ():
+    print("Multiplication")
+
+    a = float(input("Please enter number: "))
+    b = float(input("Please enter second number: "))
+
+    return a*b
+
+def division():
+    print("Division")
+
+    a = float(input("Please enter number: "))
+    b = float(input("Please enter second number: "))
+
+    return a/b
+
+while True:
+
+    res = []
+
+    print("Welcome to my Calculator")
+    print("Enter 'a' for addition")
+    print("Enter 's' for subtraction")
+    print("Enter 'm' for multiplication")
+    print("Enter 'd' for division")
+    print("Enter 'q' to quit")
+
+    c = input(" ")
+    if c != 'q':
+        if c == 'a':
+            res = addition()
+            print("Your answer is: ", res)
+        elif c == 's':
+            res = subtraction()
+            print("Your answer is: ", res)
+        elif c == 'm':
+            res = multiplication()
+            print("Your answer is: ", res)
+        elif c == 'd':
+            res = division()
+            print("Your answer is: ", res)
+
+    else:
+        print("Have a good day!")
+        break
